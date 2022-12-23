@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptar|Descencriptar</title>
+</head>
+
+<body>
+    <header id="encabezado">
+        <a href="">
+            <h1 id="logo">Encript<img src="img/Logo.png" />dor</h1>
+        </a>
+    </header>
+    <form action="" id="form">
+        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese texto aqui" onkeyup="remplazar(this)"></textarea>
+
+        <p id="alerta">
+            <span class="material-symbols-outlined">error</span>Solo letras minúsculas y sin acentos
+        </p>
+        <div id="botones">
+            <input type="button" value="Encriptar" id="encriptar" onclick="cifrar()" />
+            <input type="button" value="Desencriptar" id="desencriptar" onclick="descifrar()" />
+        </div>
+    </form>
+
+    <div class="contenedor">
+        <textarea name="resultcifrado" id="cifrado" cols="30" rows="10">
+            
+        </textarea>
+        <div id="ocultar">
+            <img src="img/Muñeco.png" alt="persona con lupa" id="muneco" />
+
+            <div id="mensaje">
+                <h2>
+                    Ningun mensaje fue encontrado
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </h2>
+            </div>
+        </div>
+        <input type="button" value="Copiar" id="copiar" onclick="copiar()" />
+
+    </div>
+
+    <footer>
+        <p>
+            Desarollado por Cristian Villate
+            <a href="https://www.linkedin.com/in/cristian-villate-62366b7b "><img src="img/linkedin-logo-png-1837-32x32.ico " alt=" " /></a>
+        </p>
+    </footer>
+</body>
+
+</html>
